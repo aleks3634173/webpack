@@ -1,0 +1,18 @@
+extends ~_layout/main
+
+block head
+  - var title = 'webpack'
+  - var bodyClass = ''
+  - var wrapClass = ''
+block content
+  include ~_module/header/header
+  .container
+    .row
+      .col-2
+        h2 Webpack
+      .col-2
+        +example()
+      .col-2
+        +example()
+block foot
+  include ~_module/footer/footer

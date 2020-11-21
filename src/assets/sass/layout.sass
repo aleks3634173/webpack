@@ -1,0 +1,29 @@
+.page 
+  position: relative
+  min-width: 300px
+  font-family: $defFont
+  font-size: $baseFontSize+px
+  font-weight: 300
+  color: $def
+  line-height: 140%
+  min-width: 340px
+  background-color: #FBFBF9
+  
+*::placeholder
+  color: inherit
+  opacity: 1
+  transition: $tr
+
+*:focus::placeholder
+  opacity: 0
+
+*::selection
+  color: #fff
+  background-color: #DB9B8F
+
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+//   color: #666
+// body input:required:valid,
+// body textarea:required:valid
+//   color: #666

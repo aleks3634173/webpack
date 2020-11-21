@@ -2,6 +2,7 @@
 
 webpack 4 (pug + scss)
 
-~ yarn run
-~ yarn run build
+~ yarn dev
+/n
+~ yarn prod
 1

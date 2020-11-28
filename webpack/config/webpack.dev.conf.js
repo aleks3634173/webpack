@@ -2,6 +2,7 @@ const webpack =  require('webpack')
 const { merge } = require('webpack-merge')
 const MiniCssPlugin = require('mini-css-extract-plugin')
 const baseWebpackConfig = require('./webpack.base.conf')
+const MediaQueryPlugin = require('media-query-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith')
 const PATHS = require('../utils/PATHS')
 
@@ -20,6 +21,15 @@ module.exports = merge(baseWebpackConfig, {
           MiniCssPlugin.loader,
           {
             loader: 'css-loader',
+          },
+          MediaQueryPlugin.loader,
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                config: 'webpack/utils/postcss.config.js'
+              }
+            }
           },
           'sass-loader',
         ]
@@ -76,7 +86,7 @@ module.exports = merge(baseWebpackConfig, {
         version: false,
     },
     hot: true,
-    //host: '192.168.1.5', // your local ip
+    host: '192.168.1.5', // your local ip
     open: 'Chrome',
     contentBase: PATHS.dist.path,
     proxy: {

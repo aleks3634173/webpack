@@ -4,7 +4,6 @@ const MiniCssPlugin = require('mini-css-extract-plugin')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const SpritesmithPlugin = require('webpack-spritesmith')
-const MediaQueryPlugin = require('media-query-plugin');
 const baseWebpackConfig = require('./webpack.base.conf')
 const PATHS = require('../utils/PATHS')
 
@@ -28,7 +27,6 @@ module.exports = merge(baseWebpackConfig, {
               importLoaders: 1,
             },
           },
-          MediaQueryPlugin.loader,
           {
             loader: 'postcss-loader',
             options: {

@@ -1,0 +1,128 @@
+.modal 
+  width: 100%
+  background-color: rgba(0,0,0,0.7)
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  display: none
+  z-index: 20
+  &.active 
+    display: flex
+  
+  &__close 
+    position: absolute
+    top: 20px
+    right: 10px
+    cursor: pointer
+    width: 25px
+    height: 25px
+    &:hover 
+    &:before,
+    &:after 
+      opacity: .7
+
+
+    &:before,
+    &:after 
+      content: ''
+      display: block
+      width: 100%
+      height: 2px
+      background-color: #3f475c
+      transition: opacity 0.2s linear
+      top: 50%
+      left: 50%
+
+    &:after 
+      transform: translateY(-50%) rotate(45deg) 
+
+    &:before 
+      transform:  rotate(-45deg) 
+
+
+.modal-user
+  &__left
+    width: 30%
+    background: #3f475c
+    padding: 30px 25px
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+    text-align: center
+    color: #fff
+    min-height: 240px
+
+
+  &__img
+    border-radius: 5px
+    margin-bottom: 10px
+    position: relative
+    width: 150px
+    height: 150px
+    overflow: hidden
+    img
+      +absolute-center
+
+  &__fullname
+    margin-bottom: 10px
+
+
+  &__gender
+    font-size: 12px
+
+
+  &__right
+    width: 70%
+    background: #fff
+    padding: 30px 25px
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+
+
+  &__user-info
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+
+
+  &__title
+    margin-bottom: 15px
+    padding-bottom: 5px
+    border-bottom: 1px solid #e0e0e0
+    color: #353c4e
+    text-transform: uppercase
+    letter-spacing: 5px
+    font-weight: bold
+
+
+  &__content
+    display: flex
+    justify-content: space-between
+
+
+  &__data
+    width: 45%
+
+  &__data h4
+    color: #353c4e
+    margin-bottom: 5px
+
+
+  &__value
+    font-size: 13px
+    margin-bottom: 10px
+    color: #919aa3
+  
+.modal-wrap
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  width: 600px
+  display: flex
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08)
+
+
+  
+

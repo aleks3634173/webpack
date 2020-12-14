@@ -1,0 +1,35 @@
+.footer 
+    background-color: #2a2b35
+    padding: 25px 0
+    &-inner 
+        display: flex
+        justify-content: space-between
+        color: white
+        font-size: 13px
+    
+    &__menu 
+        display: flex
+        margin-right: 50px
+    
+    &__link 
+        text-decoration: none
+        margin-right: 20px
+        color: rgba(255, 255, 255, 0.6)
+        position: relative
+        &:after 
+            display: block
+            content: ""
+            height: 2px
+            width: 0
+            background: #fed049
+            position: absolute
+            bottom: -5px
+            transition: width 0.5s linear
+        
+        &:hover:after 
+            width: 100%
+        
+        &:last-child 
+            margin-right: 0
+        
+    

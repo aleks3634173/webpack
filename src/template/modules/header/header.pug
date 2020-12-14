@@ -1,1 +1,45 @@
-.header header
+- var menu = [
+-   {
+-     name: 'Главная',
+-     link: "/"
+-   },
+-   {
+-     name: 'Новости',
+-     link: "#"
+-   },
+-   {
+-     name: 'Платные услуги',
+-     link: "#"
+-   },
+-   {
+-     name: 'Адреса',
+-     link: "#"
+-   },
+-   {
+-     name: 'О нас',
+-     link: "#"
+-   },
+-   {
+-     name: 'People say',
+-     link: "#"
+-   },
+-   {
+-     name: 'Contact',
+-     link: "#"
+-   }
+- ];
+header.header
+  .wrap.header-inner
+    a.logo.header__logo(href='/') SmaiL
+    nav.nav
+      each item, index in menu.length ? menu : ['There are no values']
+        a.nav__link(href!=item.link)
+          span.text-underline= item.name
+    .auth
+      a.btn.auth__link.auth__link--login(href='#') Войти
+      a.btn.auth__link.auth__link--reg(href='#') Регистрация
+    .burger
+      span.burger__item
+      span.burger__item
+      span.burger__item
+      span.burger__item

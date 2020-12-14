@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>epam</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon/favicon-48x48.png">
+  <link href="assets/css/main.css" rel="stylesheet"></head>
+  <body class="page ">
+<header class="header">
+  <div class="wrap header-inner"><a class="logo header__logo" href="/">SmaiL</a>
+    <nav class="nav"><a class="nav__link" href="/"><span class="text-underline">Главная</span></a><a class="nav__link" href="#"><span class="text-underline">Новости</span></a><a class="nav__link" href="#"><span class="text-underline">Платные услуги</span></a><a class="nav__link" href="#"><span class="text-underline">Адреса</span></a><a class="nav__link" href="#"><span class="text-underline">О нас</span></a><a class="nav__link" href="#"><span class="text-underline">People say</span></a><a class="nav__link" href="#"><span class="text-underline">Contact</span></a>
+    </nav>
+    <div class="auth"><a class="btn auth__link auth__link--login" href="#">Войти</a><a class="btn auth__link auth__link--reg" href="#">Регистрация</a></div>
+    <div class="burger"><span class="burger__item"></span><span class="burger__item"></span><span class="burger__item"></span><span class="burger__item"></span></div>
+  </div>
+</header>
+<section class="section profile">
+  <div class="wrap">
+    <div class="profile__inner content"> 
+      <div class="content__header">Пользователи</div>
+      <div class="profile__list"></div>
+      <div class="profile__loader"></div>
+      <button class="btn btn--common profile__button">Загрузить еще</button>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="copyright">© Все права защищены</p>
+    <div class="footer__menu"><a class="footer__link" href="">Главная</a><a class="footer__link" href="">Новости</a><a class="footer__link" href="">Платные услуги</a><a class="footer__link" href="">Адреса</a></div>
+  </div>
+</footer>
+<div class="modal modal-user" id="modal-user">
+  <div class="modal-wrap">
+    <div class="modal__close"></div>
+    <div class="modal-user__left">
+      <div class="modal-user__img"><img src="assets/img/content/noavatar.png" alt="user" width="100"></div>
+      <h4 class="modal-user__fullname"></h4>
+      <p class="modal-user__gender"></p>
+    </div>
+    <div class="modal-user__right">
+      <div class="modal-user__info">
+        <h3 class="modal-user__title">Information</h3>
+        <div class="modal-user__content">
+          <div class="modal-user__data">
+            <h4>Email</h4>
+            <p class="modal-user__value email"></p>
+          </div>
+          <div class="modal-user__data">
+            <h4>Phone</h4>
+            <p class="modal-user__value tel"></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-user__info">
+        <h3 class="modal-user__title">Adress</h3>
+        <div class="modal-user__content">
+          <div class="modal-user__data">
+            <h4>Country</h4>
+            <p class="modal-user__value country"></p>
+          </div>
+          <div class="modal-user__data">
+            <h4>City</h4>
+            <p class="modal-user__value city"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="assets/js/vendors.min.js"></script><script src="assets/js/main.min.js"></script></body>
+</html>
